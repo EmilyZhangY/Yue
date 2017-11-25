@@ -103,7 +103,7 @@ header
         height 100%
 
         li
-            margin-right 2em
+            margin-right 4em
 
 /* Projects */
 .projects
@@ -242,8 +242,37 @@ header
                 background-repeat: no-repeat
                 background-size: cover
 
-                p
+                .desc
                     position absolute
+                    width 100%
+                    height 100%
+                    left 0
+                    top 0
+                    background-color: rgba(0,0,0,.5)
+
+                    .wrap
+                        position absolute
+                        left 50%
+                        top 50%
+                        transform: translate(-50%, -50%)
+                        text-align: center
+                        width 80%
+
+                        .title
+                            color #ffffff
+                            font-size: 2.2rem
+
+                        .meta
+                            color: #dddddd
+                            font-size: 1.4rem
+                            line-height 1.4em
+                            margin-top 1em
+                            padding 0 2em
+
+                        .date
+                            color: #ffffff
+                            font-size: 1.4rem
+                            margin-top 5em
 
             .art1
                 background-image: url(../images/arts_1.png)
