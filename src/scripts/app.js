@@ -2,11 +2,12 @@
  * @Author: Mr.B 
  * @Date: 2017-11-27 12:17:37 
  * @Last Modified by: Mr.B
- * @Last Modified time: 2017-11-27 12:18:07
+ * @Last Modified time: 2017-11-27 18:19:20
  */
 'use strict'; 
 
-import './test.js'
+var a = require('./modules/test.js')
+import b from './modules/test.js'
 
 (function ($, win) {
     /**

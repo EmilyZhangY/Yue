@@ -2,7 +2,7 @@
  * @Author: Nokey 
  * @Date: 2016-11-22 15:30:31 
  * @Last Modified by: Mr.B
- * @Last Modified time: 2017-11-27 17:22:29
+ * @Last Modified time: 2017-11-27 17:55:56
  */
 'use strict';
 
@@ -16,7 +16,8 @@ var runSequence = require('run-sequence'),
         'static',
         'clean',
         'server',
-        'open'
+        'open',
+        'browserify'
     ]);
 
 /**
