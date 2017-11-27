@@ -1,6 +1,12 @@
 /*
- * @Author: 
+ * @Author: Mr.B 
+ * @Date: 2017-11-27 12:17:37 
+ * @Last Modified by: Mr.B
+ * @Last Modified time: 2017-11-27 12:18:07
  */
+'use strict'; 
+
+import './test.js'
 
 (function ($, win) {
     /**
