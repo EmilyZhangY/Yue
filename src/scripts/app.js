@@ -2,12 +2,9 @@
  * @Author: Mr.B 
  * @Date: 2017-11-27 12:17:37 
  * @Last Modified by: Mr.B
- * @Last Modified time: 2017-11-27 18:19:20
+ * @Last Modified time: 2017-11-28 18:17:54
  */
 'use strict'; 
-
-var a = require('./modules/test.js')
-import b from './modules/test.js'
 
 (function ($, win) {
     /**
@@ -30,12 +27,58 @@ import b from './modules/test.js'
     /**
      * Custom
      */
+    /******   scroll navigation   *******/
+    $('#my_works').click(function(event){
+        _win.scrollTo('#nav_bar', {
+            duration: 300
+        })
+    })
+    $('#nav_bar').on('click', 'li', function(e){
+        var id = $(e.target).data('scroll-target');
+        _win.scrollTo('#'+id, {
+            duration: 300,
+            offset: -80
+        })
+    })
 
-    
+    /******   pin navigation   *******/
+    var pin_wrapper = $('#pin_wrapper').get(0),
+        nav_bar = $('#nav_bar');
 
-    /**
-     * Footer
-     */
+    _win.scroll(function(e){
+        if(getBCR(pin_wrapper, 'top') < 0){
+            !nav_bar.hasClass('pinned') && nav_bar.addClass('pinned');
+        }else{
+            nav_bar.hasClass('pinned') && nav_bar.removeClass('pinned');
+        }
+    })
+
+    /******   sub page template   *******/
+    $('#sub_page_wrapper').html(`
+    <div class="content">
+        <h1 class="title"></h1>
+        <h6 class="desc"></h6>
+        <hr>
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+        <img src="images/test-img.jpg" alt="Test Image">
+        <video src="images/test-video.mp4" controls preload>
+            Your browser doesn't support video tag, please update your browser!
+        </video>
+    </div>
+    `.trim());
+
+
+    /**************      Tool     **************/
+    function getBCR(ele, type) {
+        if (type !== undefined) {
+        return ele.getBoundingClientRect()[type];
+        } else {
+        return ele.getBoundingClientRect();
+        }
+    }
 
     /**
      * Preload

@@ -2,7 +2,7 @@
  * @Author: Mr.B 
  * @Date: 2017-11-27 14:44:43 
  * @Last Modified by: Mr.B
- * @Last Modified time: 2017-11-27 17:10:35
+ * @Last Modified time: 2017-11-28 16:24:56
  */
 'use strict'; 
 
@@ -35,13 +35,17 @@ module.exports = ()=>{
       return filename;  
     }
 
-    return gulp.src('./*.html')
+    return gulp.src(['./src/*.html', './src/pages/*.html'], { 
+            base: 'src'
+        })
         .pipe(plumber())
         .pipe(revReplace({
             manifest: manifest,
             modifyUnreved: modifyUnreved,
             modifyReved: modifyReved
         }))
-        .pipe(gulp.dest('./build'))
+        .pipe(gulp.dest(function(e){
+            return './build';
+        }))
         .pipe(connect.reload());
 }
