@@ -1,8 +1,8 @@
 /*
  * @Author: Mr.B 
  * @Date: 2017-11-27 12:17:37 
- * @Last Modified by: Mr.B
- * @Last Modified time: 2017-11-28 18:17:54
+ * @Last Modified by: Nokey
+ * @Last Modified time: 2017-11-29 00:16:07
  */
 'use strict'; 
 
@@ -54,19 +54,22 @@
     })
 
     /******   sub page template   *******/
-    $('#sub_page_wrapper').html(`
+    var sub_page_wrapper = $('#sub_page_wrapper');
+    
+    sub_page_wrapper.html(`
     <div class="content">
-        <h1 class="title"></h1>
-        <h6 class="desc"></h6>
+        <img id="close_sub_page" class="close-sub-page" src="images/close-btn.png" alt="Close">
+        <h1 class="title">PROJRECT A</h1>
+        <h6 class="desc">JULY 2016 -- AUGUST 2016 / PERSONAL PROJECT</h6>
         <hr>
-        <h1></h1>
-        <h2></h2>
-        <h3></h3>
-        <p></p>
+        <h1>TITLE 1</h1>
+        <h2>Title 2</h2>
+        <h3>Title 3</h3>
+        <p>texte xttextt exte xttextte xtextte xttexte xttex ttexte xttextt extextte xttex text text</p>
         <img src="images/test-img.jpg" alt="Test Image">
-        <video src="images/test-video.mp4" controls preload>
-            Your browser doesn't support video tag, please update your browser!
-        </video>
+        <div class="video-wrap">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5ekUyxxpBt0?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
     `.trim());
 
