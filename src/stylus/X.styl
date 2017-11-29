@@ -2,7 +2,7 @@
  * @Author: Mr.B 
  * @Date: 2017-11-28 17:03:28 
  * @Last Modified by: Nokey
- * @Last Modified time: 2017-11-29 00:20:59
+ * @Last Modified time: 2017-11-29 23:16:21
  */
 
 @import 'nib'
@@ -103,6 +103,10 @@ x-reset()
     display flex
     align-items: center
     justify-content: center
+    background-image: url(../images/ring-loader.gif)
+    background-size: 30px
+    background-repeat: no-repeat
+    background-position: center
 
     &.show
         top 0
@@ -119,6 +123,10 @@ x-reset()
         right 80px
         width 30px
         cursor pointer
+        transition: transform .3s
+
+        &:hover
+            transform: rotate(90deg)
 
 /* Header */
 .pin-wrapper
@@ -172,7 +180,6 @@ x-reset()
         height 100%
         z-index: 9999
         background-color: rgba(255,255,255,1)
-        overflow-y: scroll
         opacity 0
         transform: translateY(30px)
         transition: opacity .3s, transform .3s
@@ -182,27 +189,29 @@ x-reset()
             opacity 1
             transform: translateY(0)
 
+        .close-sub-page
+            position absolute
+            right 4%
+            top 45px
+            width 30px
+            cursor pointer
+            transition: transform .3s
+
+            &:hover
+                transform: rotate(90deg)
+
         .content
             max-width 1080px
+            height 100%
             margin 0 auto
             padding 52px 80px
-            overflow hidden
-
-            .close-sub-page
-                position absolute
-                right 60px
-                top 45px
-                width 30px
-                cursor pointer
-                transition: transform .3s
-
-                &:hover
-                    transform: rotate(90deg)
+            overflow-x hidden
+            overflow-y: scroll
 
             h1
                 font-size: 3rem
                 font-weight: bold
-                margin 30px 0
+                margin 15px 0
                 color #4A4A4A
 
                 &.title
@@ -230,13 +239,16 @@ x-reset()
 
             hr
                 border-top 2px dashed #9B9B9B
-                margin 15px 0
+                margin 30px 0
 
             p
                 font-size: 1.8rem
                 color: #A9A9A9
-                line-height 1.2em
+                line-height 1.4em
                 margin 18px 0
+
+                em
+                    font-weight: bold
 
             img
                 display block
@@ -247,6 +259,10 @@ x-reset()
                 position relative
                 padding-top 56.25%
                 margin 15px 0
+                background-image: url(../images/ring-loader.gif)
+                background-size: 30px
+                background-repeat: no-repeat
+                background-position: center
 
                 iframe
                     position absolute
