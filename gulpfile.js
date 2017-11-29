@@ -68,7 +68,7 @@ gulp.task('build', (cb)=>{
  * 启动Gulp，开始监听！:)
  */
 gulp.task('watch', ['dev'], ()=>{
-    gulp.watch(['./rev/**/*.json', './*.html'], ['html']);
+    gulp.watch(['./rev/**/*.json', './src/*.html'], ['html']);
     gulp.watch('./src/scripts/*.js', ['es6']);
     gulp.watch('./src/stylus/*.styl', ['stylus']);
     gulp.watch(['./src/scripts/plugins/**/*', './src/images/**/*'], ['static']);
