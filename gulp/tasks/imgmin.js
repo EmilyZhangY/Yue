@@ -18,7 +18,7 @@ module.exports = ()=>{
             imagemin.gifsicle(),
             imagemin.svgo()
         ],{
-            // verbose: true
+            verbose: true,
             optimizationLevel: 7
         }))
         .pipe(gulp.dest('./build/images'));

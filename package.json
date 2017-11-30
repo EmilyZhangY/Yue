@@ -34,7 +34,8 @@
   },
   "scripts": {
     "dev": "gulp watch",
-    "build": "gulp build"
+    "build": "gulp build",
+    "gh": "rm -rf ./docs && cp -r build docs" // master/docs can be used as github pages
   },
   "author": "yue",
   "license": "ISC"
