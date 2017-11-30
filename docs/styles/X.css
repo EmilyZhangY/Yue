@@ -470,11 +470,6 @@ img {
   position: relative;
   height: 300px;
   overflow: hidden;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 .project .inner-box {
@@ -499,6 +494,80 @@ img {
   margin-top: 1em;
   font-size: 1.8rem;
   line-height: 1.2em;
+}
+.project .bg-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.project.no-1 .bg-img {
+  background-image: url("../images/project_Lavendern.png");
+}
+.project.no-3 .bg-img {
+  background-image: url("../images/project_Babies.png");
+}
+.project.no-4 .bg-img {
+  background-image: url("../images/project_TheFinalPiece.png");
+}
+.project h1,
+.project h3,
+.project p {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.project .bg-img {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+.project.align-left:hover h1,
+.project.align-left:hover h3,
+.project.align-left:hover p {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  transform: translateX(-30px);
+}
+.project.align-right:hover h1,
+.project.align-right:hover h3,
+.project.align-right:hover p {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translateX(30px);
+  -moz-transform: translateX(30px);
+  -o-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+}
+.project:hover .bg-img {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .project.light {
   background-color: #eee;
@@ -674,6 +743,7 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 80%;
+  cursor: pointer;
 }
 .art-works-show .art-box > .item .inner .desc .wrap .title {
   color: #fff;
@@ -692,20 +762,23 @@ img {
   margin-top: 20%;
 }
 .art-works-show .art-box > .item .art1 {
-  background-image: url("../images/arts_1.png");
+  background-image: url("../images/art1.png");
 }
 .art-works-show .art-box > .item .art2 {
-  background-image: url("../images/arts_2.png");
+  background-image: url("../images/art2.png");
 }
 .art-works-show .art-box > .item .art3 {
-  background-image: url("../images/arts_3.png");
+  background-image: url("../images/art3.png");
 }
 .art-works-show .art-box > .item .art4 {
-  background-image: url("../images/arts_4.png");
+  background-image: url("../images/art4.png");
+}
+.art-works-show .art-box > .item .art5 {
+  background-image: url("../images/art5.png");
 }
 /* About Me */
 .about-me {
-  width: 60%;
+  max-width: 760px;
   margin: 0 auto;
   padding: 0 2em;
 }
@@ -725,7 +798,7 @@ img {
   color: #9b9b9b;
   font-size: 1.8rem;
   margin: 1em 0;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 .about-me .contact-me {
   padding: 2em;

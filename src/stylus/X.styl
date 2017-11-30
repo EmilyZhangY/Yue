@@ -274,9 +274,6 @@ x-reset()
     position relative
     height 300px
     overflow hidden
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center
     cursor pointer
 
     .inner-box
@@ -298,8 +295,49 @@ x-reset()
         font-size: 1.8rem
         line-height 1.2em
 
-    // &.no-1
-    //     background-image: url(../images/project_1.png)
+    .bg-img
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        opacity 0
+
+    &.no-1
+        .bg-img
+            background-image: url(../images/project_Lavendern.png)
+
+    &.no-3
+        .bg-img
+            background-image: url(../images/project_Babies.png)
+
+    &.no-4
+        .bg-img
+            background-image: url(../images/project_TheFinalPiece.png)
+
+    h1, h3, p
+        transition: all .5s
+
+    .bg-img
+        transition all 1s
+            
+    &.align-left:hover
+        h1, h3, p
+            opacity 0
+            transform: translateX(-30px)
+
+    &.align-right:hover
+        h1, h3, p
+            opacity 0
+            transform: translateX(30px)
+
+    &:hover
+        .bg-img
+            opacity 1
+            transform: scale(1.1)
 
     &.light
         background-color: #eee
@@ -422,6 +460,7 @@ x-reset()
                         transform: translate(-50%, -50%)
                         text-align: center
                         width 80%
+                        cursor pointer
 
                         .title
                             color #ffffff
@@ -440,20 +479,23 @@ x-reset()
                             margin-top 20%
 
             .art1
-                background-image: url(../images/arts_1.png)
+                background-image: url(../images/art1.png)
 
             .art2
-                background-image: url(../images/arts_2.png)
+                background-image: url(../images/art2.png)
 
             .art3
-                background-image: url(../images/arts_3.png)
+                background-image: url(../images/art3.png)
 
             .art4
-                background-image: url(../images/arts_4.png)
+                background-image: url(../images/art4.png)
+
+            .art5
+                background-image: url(../images/art5.png)
 
 /* About Me */
 .about-me
-    width 60%
+    max-width 760px
     margin 0 auto
     padding 0 2em
 
@@ -473,7 +515,7 @@ x-reset()
         color #9B9B9B
         font-size: 1.8rem
         margin 1em 0
-        line-height 1.2em
+        line-height 1.4em
 
     .contact-me
         padding 2em
