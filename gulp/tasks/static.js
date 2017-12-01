@@ -1,8 +1,8 @@
 /*
  * @Author: Mr.B 
  * @Date: 2017-11-27 15:39:34 
- * @Last Modified by: Mr.B
- * @Last Modified time: 2017-11-27 17:12:46
+ * @Last Modified by: Nokey
+ * @Last Modified time: 2017-12-01 21:06:52
  */
 'use strict'; 
 
@@ -23,7 +23,7 @@ module.exports = ()=>{
         .pipe(connect.reload());
 
     gulp.src('./src/static/**/*')
-        .pipe(gulp.dest('./build'))
+        .pipe(gulp.dest('./build/static'))
         .pipe(connect.reload());
 
     gulp.src('./src/favicon.png')

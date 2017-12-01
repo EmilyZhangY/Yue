@@ -2,13 +2,16 @@
  * @Author: Mr.B 
  * @Date: 2017-11-28 17:03:28 
  * @Last Modified by: Nokey
- * @Last Modified time: 2017-11-30 23:07:29
+ * @Last Modified time: 2017-12-01 23:22:22
  */
 
 @import 'nib'
 @import 'custom/reset'
 
 x-reset()
+
+body
+    font-family: Arial, Helvetica, sans-serif
 
 /*
   Custom
@@ -172,104 +175,6 @@ x-reset()
     box-shadow: 0px 8px 16px #222;
     position: relative;
 
-    .sub-page-wrapper
-        position fixed
-        left 0
-        top 100%
-        width 100%
-        height 100%
-        z-index: 9999
-        background-color: rgba(255,255,255,1)
-        opacity 0
-        transform: translateY(30px)
-        transition: opacity .3s, transform .3s
-
-        &.show
-            top 0
-            opacity 1
-            transform: translateY(0)
-
-        .close-sub-page
-            position absolute
-            right 4%
-            top 45px
-            width 30px
-            cursor pointer
-            transition: transform .3s
-
-            &:hover
-                transform: rotate(90deg)
-
-        .content
-            max-width 1080px
-            height 100%
-            margin 0 auto
-            padding 52px 80px
-            overflow-x hidden
-            overflow-y: scroll
-
-            h1
-                font-size: 3rem
-                font-weight: bold
-                margin 15px 0
-                color #4A4A4A
-
-                &.title
-                    font-size: 4.2rem
-                    margin-bottom 15px
-                    text-align center
-
-            h2
-                font-size: 2.4rem
-                font-weight: bold
-                margin 20px 0
-                color #4A4A4A
-
-            h3
-                font-size: 2.4rem
-                font-weight: bold
-                margin 15px 0
-                color #A9A9A9
-            
-            h6.desc
-                font-size: 1.8rem
-                text-align center
-                color #9B9B9B
-                margin-bottom 32px
-
-            hr
-                border-top 2px dashed #9B9B9B
-                margin 30px 0
-
-            p
-                font-size: 1.8rem
-                color: #A9A9A9
-                line-height 1.4em
-                margin 18px 0
-
-                em
-                    font-weight: bold
-
-            img
-                display block
-                margin 15px 0
-                width 100%
-
-            .video-wrap
-                position relative
-                padding-top 56.25%
-                margin 15px 0
-                background-image: url(../images/ring-loader.gif)
-                background-size: 30px
-                background-repeat: no-repeat
-                background-position: center
-
-                iframe
-                    position absolute
-                    left 0
-                    top 0
-
-
 .project
     position relative
     height 300px
@@ -323,9 +228,13 @@ x-reset()
         .bg-img
             background-image: url(../images/project_2.jpg)
 
-    &.no-4
+    &.no-3
         .bg-img
             background-image: url(../images/project_3.jpg)
+
+    &.no-4
+        .bg-img
+            background-image: url(../images/project_4.jpg)
             
     &.align-left:hover
         .content-wrap
@@ -397,6 +306,7 @@ x-reset()
                 position relative
                 width 100%
                 max-width: 275px
+                margin 0 auto
 
                 img
                     width 100%
@@ -514,6 +424,104 @@ x-reset()
             .art5
                 background-image: url(../images/art5.png)
 
+/* Sub Page */
+.sub-page-wrapper
+    position fixed
+    left 0
+    top 100%
+    width 100%
+    height 100%
+    z-index: 9999
+    background-color: rgba(255,255,255,1)
+    opacity 0
+    transform: translateY(30px)
+    transition: opacity .3s, transform .3s
+
+    &.show
+        top 0
+        opacity 1
+        transform: translateY(0)
+
+    .close-sub-page
+        position absolute
+        right 4%
+        top 45px
+        width 30px
+        cursor pointer
+        transition: transform .3s
+
+        &:hover
+            transform: rotate(90deg)
+
+    .content
+        max-width 1080px
+        height 100%
+        margin 0 auto
+        padding 52px 80px
+        overflow-x hidden
+        overflow-y: scroll
+
+        h1
+            font-size: 3rem
+            font-weight: bold
+            margin 15px 0
+            color #4A4A4A
+
+            &.title
+                font-size: 4.2rem
+                margin-bottom 15px
+                text-align center
+
+        h2
+            font-size: 2.4rem
+            font-weight: bold
+            margin 20px 0
+            color #4A4A4A
+
+        h3
+            font-size: 2.4rem
+            font-weight: bold
+            margin 15px 0
+            color #A9A9A9
+        
+        h6.desc
+            font-size: 1.8rem
+            text-align center
+            color #9B9B9B
+            margin-bottom 32px
+
+        hr
+            border-top 2px dashed #9B9B9B
+            margin 30px 0
+
+        p
+            font-size: 1.8rem
+            color: #A9A9A9
+            line-height 1.4em
+            margin 18px 0
+
+            em
+                font-weight: bold
+
+        img
+            display block
+            margin 15px 0
+            width 100%
+
+        .video-wrap
+            position relative
+            padding-top 56.25%
+            margin 15px 0
+            background-image: url(../images/ring-loader.gif)
+            background-size: 30px
+            background-repeat: no-repeat
+            background-position: center
+
+            iframe
+                position absolute
+                left 0
+                top 0
+
 /* About Me */
 .about-me
     max-width 760px
@@ -530,8 +538,9 @@ x-reset()
 
     .portrait
         margin 2em 0
-        height 300px
-        background-color: #D8D8D8
+
+        img
+            width 100%
 
     p
         color #9B9B9B
@@ -540,7 +549,6 @@ x-reset()
         line-height 1.4em
 
     .contact-me
-        margin-top 300px
         padding 2em 0
 
         a
@@ -556,7 +564,6 @@ footer
         line-height 80px
         font-size 1.6rem
         text-align center
-        line-height 1.4em
         color #fff
         background-color #9B9B9B
 

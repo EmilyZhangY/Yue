@@ -37,7 +37,7 @@
     <link rel="apple-touch-icon" href="/favicon.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/X.css?v=a04709ba1c">
+    <link rel="stylesheet" href="./styles/X.css?v=40d05a62c1">
 
     <!-- html5 hack -->
     <!--[if lt IE 9]>
@@ -49,7 +49,7 @@
 
 <body>
     <!-- Intro Page -->
-    <aside class="intro-page">
+    <aside id="intro_page" class="intro-page">
         <div class="desc">
             <div class="txt-wrap">
                 <h1>Hi! I'm Yue.</h1>
@@ -76,66 +76,66 @@
     <!-- Header -->
     <div id="pin_wrapper" class="pin-wrapper">
         <header id="nav_bar" class="pinned">
-            <div class="home btn">Home</div>
+            <div data-scroll-target="intro_page" class="home btn scroll-item">Home</div>
             <ul>
-                <li data-scroll-target="projects_show">Projects</li>
-                <li data-scroll-target="games_show">Games</li>
-                <li data-scroll-target="art_works_show">Arts</li>
-                <li data-scroll-target="about_me">About me</li>
+                <li class="scroll-item" data-scroll-target="projects_show">Projects</li>
+                <li class="scroll-item" data-scroll-target="games_show">Games</li>
+                <li class="scroll-item" data-scroll-target="art_works_show">Arts</li>
+                <li class="scroll-item" data-scroll-target="about_me">About me</li>
             </ul>
         </header>
     </div>
 
     <!-- Projects -->
     <div id="projects_show" class="projects-show">
-        <section class="project no-1 align-left light" data-no="1">
+        <section class="project no-1 align-left light" data-no="4">
             <div class="bg-img"></div>
-            <div class="inner-box">
-                <h1>SLEEPING LAVENDER</h1>
-                <h3>a vr museum</h3>
-                <p>
-                    This is a project for people who want to get closer to famous artists. The project is a vr museum, and user can experience the artists' life story and interact with the elements in the scene.
-                </p>
+            <div class="content-wrap">
+                <div class="inner-box">
+                    <h1>The Final Piece</h1>
+                    <h3>JUL.16 - AUG.16 / GROUP</h3>
+                    <p>
+                        This is an art trip in VR for people to explore artists’ life story and get closer to famous paintings.
+                    </p>
+                </div>
             </div>
         </section>
-        <section class="project no-2 align-right dark" data-no="2">
+        <section class="project no-2 align-right light" data-no="3">
             <div class="bg-img"></div>
-            <div class="inner-box">
-                <h1>BIG NEWS ON EARTH</h1>
-                <h3>a vr museum</h3>
-                <p>
-                    This is a project for people who want to get closer to famous artists. The project is a vr museum, and user can experience the artists' life story and interact with the elements in the scene.
-                </p>
+            <div class="content-wrap">
+                <div class="inner-box">
+                    <h1>BABiES</h1>
+                    <h3>MAY.16 - JUN.16 / GROUP</h3>
+                    <p>
+                        This is an intellegent nursery system for parents to solve problems and be more comfortable in the nursing process.
+                    </p>
+                </div>
             </div>
         </section>
-        <section class="project no-3 align-left light" data-no="3">
+        <section class="project no-3 align-left light" data-no="2">
             <div class="bg-img"></div>
-            <div class="inner-box">
-                <h1>BABiES</h1>
-                <h3>a vr museum</h3>
-                <p>
-                    This is a project for people who want to get closer to famous artists. The project is a vr museum, and user can experience the artists' life story and interact with the elements in the scene.
-                </p>
+            <div class="content-wrap">
+                <div class="inner-box">
+                    <h1>Big News on Earth</h1>
+                    <h3>AUG.17 - OCT.17 / PERSONAL</h3>
+                    <p>
+                        The project allows children to learn science by playing with each other, using the AR techniques.
+                    </p>
+                </div>
             </div>
         </section>
-        <section class="project no-4 align-right dark" data-no="4">
+        <section class="project no-4 align-right light" data-no="1">
             <div class="bg-img"></div>
-            <div class="inner-box">
-                <h1>The Fianl Piece</h1>
-                <h3>a vr museum</h3>
-                <p>
-                    This is a project for people who want to get closer to famous artists. The project is a vr museum, and user can experience the artists' life story and interact with the elements in the scene.
-                </p>
+            <div class="content-wrap">
+                <div class="inner-box">
+                    <h1>Lavendern</h1>
+                    <h3>NOV.15 - JAN.16 / GROUP</h3>
+                    <p>
+                        Lavendern is a interactive night lamp to improve the quality of sleep by applying suitable sound, smell and temperature.
+                    </p>
+                </div>
             </div>
         </section>
-
-        <!-- project sub page -->
-        <aside id="sub_page_wrapper" class="sub-page-wrapper">
-            <img id="close_sub_page" class="close-sub-page" src="images/close-btn.png" alt="Close">
-            <div class="content">
-                
-            </div>
-        </aside>
     </div>
 
     <!-- Games -->
@@ -143,17 +143,35 @@
         <h1>PLAY MY GAMES</h1>
 
         <div class="game-box">
-            <div class="game no-1">
-                <img src="images/game_1.png" alt="Game1">
-                <h3>Game A</h3>
+            <div class="game no-1" data-no="1">
+                <div class="inner-wrap">
+                    <img src="images/game_1.png" alt="Game1">
+                    <div class="play-tip">
+                        PLAY!
+                    </div>
+                </div>
+                
+                <h3>Harmonic on the Ocean</h3>
             </div>
-            <div class="game no-2">
-                <img src="images/game_2.png" alt="Game2">
-                <h3>Game B</h3>
+            <div class="game no-2" data-no="2">
+                <div class="inner-wrap">
+                    <img src="images/game_2.png" alt="Game2">
+                    <div class="play-tip">
+                        PLAY!
+                    </div>
+                </div>
+                
+                <h3>Fine, Daddy</h3>
             </div>
-            <div class="game no-3">
-                <img src="images/game_3.png" alt="Game3">
-                <h3>Game C</h3>
+            <div class="game no-3" data-no="3">
+                <div class="inner-wrap">
+                    <img src="images/game_3.png" alt="Game3">
+                    <div class="play-tip">
+                        PLAY!
+                    </div>
+                </div>
+                
+                <h3>Single-Bed Dorm</h3>
             </div>
         </div>
     </div>
@@ -164,56 +182,56 @@
 
         <div class="art-box">
             <div class="item">
-                <div class="inner art1">
+                <div class="inner art1" data-no="1">
                     <div class="desc">
                         <div class="wrap">
-                            <p class="title">AZAPELLA</p>
-                            <p class="meta">album design for a schooh chorus</p>
-                            <p class="date">06/01/16-08/22/16</p>
+                            <p class="title">CERAMICS</p>
+                            <p class="meta">JUL. 2017</p>
+                            <p class="date">I love the surprise brought by shaping and glazing.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="inner art2">
+                <div class="inner art2" data-no="2">
                     <div class="desc">
                         <div class="wrap">
-                            <p class="title">AZAPELLA</p>
-                            <p class="meta">album design for a schooh chorus</p>
-                            <p class="date">06/01/16-08/22/16</p>
+                            <p class="title">WHAT I SEE</p>
+                            <p class="meta">MAR. 2017</p>
+                            <p class="date">What did I see?<br>What you see?</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="inner art3">
+                <div class="inner art3" data-no="3">
                     <div class="desc">
                         <div class="wrap">
                             <p class="title">AZAPELLA</p>
-                            <p class="meta">album design for a schooh chorus</p>
-                            <p class="date">06/01/16-08/22/16</p>
+                            <p class="meta">JUL. 2016</p>
+                            <p class="date">I designed this music album for a student chorus in my school.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="inner art4">
+                <div class="inner art4" data-no="4">
                     <div class="desc">
                         <div class="wrap">
-                            <p class="title">AZAPELLA</p>
-                            <p class="meta">album design for a schooh chorus</p>
-                            <p class="date">06/01/16-08/22/16</p>
+                            <p class="title">ON-SALE</p>
+                            <p class="meta">MAY. 2015</p>
+                            <p class="date">How can hands play with dynamic fonts?</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="inner art5">
+                <div class="inner art5" data-no="5">
                     <div class="desc">
                         <div class="wrap">
-                            <p class="title">AZAPELLA</p>
-                            <p class="meta">album design for a schooh chorus</p>
-                            <p class="date">06/01/16-08/22/16</p>
+                            <p class="title">PAPER CITIES</p>
+                            <p class="meta">DEC. 2016</p>
+                            <p class="date">Taibei and Beijing, we express our impression of these two cities.</p>
                         </div>
                     </div>
                 </div>
@@ -225,22 +243,32 @@
     <div id="about_me" class="about-me">
         <h1>MORE ABOUT ME</h1>
 
-        <!-- <div class="portrait">
-            <img src="" alt="">
-        </div> -->
+        <div class="portrait">
+            <img src="images/about_me.jpg" alt="Me">
+        </div>
 
-        <p>The one who dream and care about people's daily life and want to improve by making fun and cool stuff.the one who dream and care about people's daily life and want to improve by making fun and cool stuff.the one who dream and care about people's daily life and want to improve by making fun and cool stuff.</p>
-        <p>The one who dream and care about people's daily life and want to improve by making fun and cool stuff.the one who dream and care about people's daily life and want to improve by making fun and cool stuf cool stuf coolf.</p>
-        <p>The one who dream and care about people's daily life and want to improve by making fun and cool stuff.the one who dream and care about people's daily life and want to improve by making fun and cool stuff.The one who dream and care about people's daily life and want to improve by making fun and cool stuff.the one who dream and care about people's daily life and want to improve by making fun and cool stuff.</p>
+        <p>I was born in a charming family. My parents supported me and held positive opinions about my thoughts all the time. I’m really grateful that they always encouraged me to do things that I really liked, so I had a very good time during my childhood.</p>
+        <p>After stepping into the middle school, here came more pressure about study and life, since I was the kind of person who has exact demands on myself. To relax my intense mind at the spare time, I began to make little stuff by hand and then gave them to my friends. It began with simple forms such as cards or albums and then moved to leather, woods, and pop-up books. As I gave my presents to people around me, seeing their happy faces could always cheer me up. Making fun stuff by hand occupied a special place in my mind, which connected materials to my sentiment. </p>
+        <p>As I kept making stuff, in my high school years, I made some edited videos and live demos using Prezi or PowerPoint. I also designed an English learning website in my last year in high school. My mom often told me that my works really convinced her that digital media art would be a great area for me to explore. After graduation, I succeeded in getting into the School of Animation and Digital Arts at the Communication University of China.</p>
+        <p>During my undergraduate years, I acted as a leader in several projects. In teamwork, I advocated that a positive ambiance during making process would make a product carry such positivity. So I always try to create a happy atmosphere in the teamwork. Also, by communicating with my friends and team members, I realized that not everyone is in the same happy life as me. Thus, I began to value the importance of doing research to find out what users really need as well as the best way to deal with their problems. During that period, I was thinking: why or why not an artwork cannot at the same time be an object with a function in the realm of daily life? My answer is most positive that is that an artwork combining techniques can definitely improve people’s lives in the most practical ways. With code or technique based new media art, this once seemingly impossible compound becomes possible in nowadays.</p>
+        <p>During my undergraduate level, the class such as Creative Thinking of Interactive Art, HCI Technology and Applications, and User Experience Analysis are my favorite classes. From them, I have already equipped with coding language, honed the use of software, and learned quite much about interactive multimedia art. I burgeoned a number of ideas in relative forms. I wish all these dreams will finally come true.</p>
 
         <p class="contact-me">
             If you want to know more about me, you could 
-            <a href="#">download my cv</a>
+            <a href="static/cv-zhangyue.doc">download my cv</a>
             or 
-            <a href="mailto:name@email.com">contact me by email</a>
+            <a href="mailto:13810186920@163.com">contact me by email</a>
             . Nice to have you. 
         </p>
     </div>
+
+    <!-- sub page -->
+    <aside id="sub_page_wrapper" class="sub-page-wrapper">
+        <img id="close_sub_page" class="close-sub-page" src="images/close-btn.png" alt="Close">
+        <div class="content">
+            
+        </div>
+    </aside>
 
     <!-- Footer -->
     <footer id="footer">
@@ -260,7 +288,7 @@
     <script src="./scripts/plugins/animation.gsap.min.js"></script>
 
     <!-- Custom -->
-    <script src="./scripts/bundle.min.js?v=1cc973a377"></script>
+    <script src="./scripts/bundle.min.js?v=5fdf157d5c"></script>
 </body>
 
 </html>

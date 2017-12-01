@@ -2,7 +2,7 @@
  * @Author: Mr.B 
  * @Date: 2017-11-27 12:17:37 
  * @Last Modified by: Nokey
- * @Last Modified time: 2017-11-29 23:46:01
+ * @Last Modified time: 2017-12-01 22:35:29
  */
 'use strict'; 
 
@@ -109,6 +109,20 @@
         })
     })
 
+    function showSubPage(html_str){
+        sub_page_wrapper.find('.content').html(html_str);
+        
+        !sub_page_wrapper.hasClass('show') && sub_page_wrapper.addClass('show');
+        
+        $('body').css({
+            height: _win_height + 'px',
+            overflow: 'hidden'
+        })
+    }
+
+    /**
+     * Show project sub page
+     */
     $('#projects_show').on('click', 'section', function(e){
         var section = $(e.currentTarget),
             no = section.data('no'),
@@ -161,7 +175,7 @@
                 <p>Cover the roots of lavender——Trigger photoresistors——Diode lights turn on——Print the resistance value——Pass the motor signal——volatile essential oil——music box sound</p>
                 <img src="images/lavender/lavender10.png" alt="Image">
                 <div class="video-wrap">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5ekUyxxpBt0?rel=0" frameborder="0" allowfullscreen>Loading...</iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Jwse92m0LeI?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <h1>FINAL DESIGN</h1>
                 <h2>Modeling</h2>
@@ -340,8 +354,6 @@
 
             case 5:
                 sub_page_html = `
-                <div class="content">
-                    <img id="close_sub_page" class="close-sub-page" src="images/close-btn.png" alt="Close">
                     <h1 class="title">PROJRECT 5</h1>
                     <h6 class="desc">JULY 2016 -- AUGUST 2016 / PERSONAL PROJECT</h6>
                     <hr>
@@ -353,7 +365,6 @@
                     <div class="video-wrap">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5ekUyxxpBt0?rel=0" frameborder="0" allowfullscreen>Loading...</iframe>
                     </div>
-                </div>
                 `.trim()
                 break;
         
@@ -362,14 +373,147 @@
                 break;
         }
 
-        sub_page_wrapper.find('.content').html(sub_page_html);
+        showSubPage(sub_page_html)
+    })
 
-        !sub_page_wrapper.hasClass('show') && sub_page_wrapper.addClass('show');
+    /**
+     * Show game sub page
+     */
+    $('#games_show').on('click', '.game', (e)=>{
+        var section = $(e.currentTarget),
+        no = section.data('no'),
+        sub_page_html = '';
 
-        $('body').css({
-            height: _win_height + 'px',
-            overflow: 'hidden'
-        })
+        switch (no) {
+            case 1:
+                sub_page_html = `
+                <h1 class="title">Harmonic on the Ocean</h1>
+                <h6 class="desc">DEC. 2016 -- JAN. 2017 / PERSONAL PROJECT</h6>
+                <hr>
+                <p>This is my final project of the European and American Children Picture Books class in the exchanging semester in Taiwan. The picture book is about a real whale sings at 52 Hz and doesn’t have herd in many years. I want to rearrange this story to convey a positive attitude towards life to children. That is ‘no matter how unique you are, you are not alone and you are gonna find your own happiness.’ And in this book, I used the visual language that provided in the book Picture This.</p>
+                <img src="images/games/gamea1.jpg" alt="Image">
+                <img src="images/games/gamea2.jpg" alt="Image">
+                <img src="images/games/gamea3.jpg" alt="Image">
+                <img src="images/games/gamea4.jpg" alt="Image">
+                <img src="images/games/gamea5.jpg" alt="Image">
+                <img src="images/games/gamea6.jpg" alt="Image">
+                <img src="images/games/gamea7.jpg" alt="Image">
+                <img src="images/games/gamea8.jpg" alt="Image">
+                `.trim()
+                break;
+
+            case 2:
+                sub_page_html = `
+                <h1 class="title">Fine, Daddy</h1>
+                <h6 class="desc">JUL. 2017 -- AUG. 2017 / PERSONAL PROJECT</h6>
+                <hr>
+                <p>This is my final project of the Interactivity class in the summer session at UCLA. I made a puzzle game using p5.js. It’s about an girl receive some puzzle from her father, who is an archaeologist. And finally find out something mistery about human……</p>
+                <a href="https://alpha.editor.p5js.org/full/HyoGjfxwZ" target="_blank">
+                    <img src="images/games/gameb0.jpg" alt="Image">
+                </a>
+                <img src="images/games/gameb1.jpg" alt="Image">
+                <img src="images/games/gameb2.jpg" alt="Image">
+                <img src="images/games/gameb3.jpg" alt="Image">
+                <img src="images/games/gameb4.jpg" alt="Image">
+                <img src="images/games/gameb5.jpg" alt="Image">
+                `.trim()
+                break;
+
+            case 3:
+                sub_page_html = `
+                <h1 class="title">Single-Bed Dorm</h1>
+                <h6 class="desc">JAN. 2016 -- FEB. 2016 / GROUP PROJECT</h6>
+                <hr>
+                <p>At that period, one of our roommates had conflicts with the rest of us, and the situation was getting worse. I was wondering what she was thinking, and decied to make this horror game based on a lot of real story in our life. I set different endings including a nice and warm one, hoping that the peaceful choices will resolve those quarrel. I played the role of leader, scriptwriter and designer in the team. I used RPG Maker to develop this game.</p>
+                
+                <h3>Game Screenshots</h3>
+                <img src="images/games/gamec1.jpg" alt="Image">
+                <img src="images/games/gamec2.jpg" alt="Image">
+                <img src="images/games/gamec3.jpg" alt="Image">
+                <img src="images/games/gamec4.jpg" alt="Image">
+                <h3>Game Design</h3>
+                <img src="images/games/gamec5.jpg" alt="Image">
+                `.trim()
+                break;
+        
+            default:
+                sub_page_html = 'No Project Content!'
+                break;
+        }
+
+        showSubPage(sub_page_html)
+    })
+
+    /**
+     * Show arts sub page
+     */
+    $('#art_works_show').on('click', '.inner', (e)=>{
+        var section = $(e.currentTarget),
+        no = section.data('no'),
+        sub_page_html = '';
+
+        switch (no) {
+            case 1:
+                sub_page_html = `
+                <h1 class="title">CERAMICS</h1>
+                <h6 class="desc">JUL. 2017</h6>
+                <hr>
+                <img src="images/arts/art1a.jpg" alt="Image">
+                <img src="images/arts/art1b.jpg" alt="Image">
+                <img src="images/arts/art1c.jpg" alt="Image">
+                `.trim()
+                break;
+
+            case 2:
+                sub_page_html = `
+                <h1 class="title">WHAT I SEE</h1>
+                <h6 class="desc">MAR. 2017</h6>
+                <hr>
+                <img src="images/arts/art2a.jpg" alt="Image">
+                <img src="images/arts/art2b.jpg" alt="Image">
+                <img src="images/arts/art2c.jpg" alt="Image">
+                `.trim()
+                break;
+
+            case 3:
+                sub_page_html = `
+                <h1 class="title">AZAPELLA</h1>
+                <h6 class="desc">JUL. 2016</h6>
+                <hr>
+                <img src="images/arts/art3a.jpg" alt="Image">
+                <img src="images/arts/art3b.jpg" alt="Image">
+                <img src="images/arts/art3c.jpg" alt="Image">
+                `.trim()
+                break;
+
+            case 4:
+                sub_page_html = `
+                <h1 class="title">ON-SALE</h1>
+                <h6 class="desc">MAY. 2015</h6>
+                <hr>
+                <img src="images/arts/art4a.gif" alt="Image">
+                <img src="images/arts/art4b.gif" alt="Image">
+                `.trim()
+                break;
+
+            case 5:
+                sub_page_html = `
+                <h1 class="title">PAPER CITIES</h1>
+                <h6 class="desc">DEC. 2016</h6>
+                <hr>
+                <img src="images/arts/art5a.jpg" alt="Image">
+                <img src="images/arts/art5b.jpg" alt="Image">
+                <img src="images/arts/art5c.jpg" alt="Image">
+                <img src="images/arts/art5d.jpg" alt="Image">
+                `.trim()
+                break;
+        
+            default:
+                sub_page_html = 'No Project Content!'
+                break;
+        }
+
+        showSubPage(sub_page_html)
     })
 
 
