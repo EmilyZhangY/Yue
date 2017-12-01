@@ -276,11 +276,20 @@ x-reset()
     overflow hidden
     cursor pointer
 
+    .content-wrap
+        position absolute
+        top 0
+        width 40%
+        height 100%
+        background-color: rgba(0,0,0,.3)
+        transition: all .5s
+
     .inner-box
         position absolute
         top 50%
-        transform: translateY(-50%)
-        width 36%
+        left 50%
+        transform: translate(-50%, -50%)
+        width 80%
 
     h1
         font-size: 3.2rem
@@ -304,48 +313,41 @@ x-reset()
         background-size: cover
         background-repeat: no-repeat
         background-position: center
-        opacity 0
+        transition all 1s
 
     &.no-1
         .bg-img
-            background-image: url(../images/project_Lavendern.png)
+            background-image: url(../images/project_1.jpg)
 
-    &.no-3
+    &.no-2
         .bg-img
-            background-image: url(../images/project_Babies.png)
+            background-image: url(../images/project_2.jpg)
 
     &.no-4
         .bg-img
-            background-image: url(../images/project_TheFinalPiece.png)
-
-    h1, h3, p
-        transition: all .5s
-
-    .bg-img
-        transition all 1s
+            background-image: url(../images/project_3.jpg)
             
     &.align-left:hover
-        h1, h3, p
+        .content-wrap
             opacity 0
             transform: translateX(-30px)
 
     &.align-right:hover
-        h1, h3, p
+        .content-wrap
             opacity 0
             transform: translateX(30px)
 
     &:hover
         .bg-img
-            opacity 1
+            transform: scale(1.1)
 
     &.light
-        background-color: #eee
 
         h1, p
-            color #4A4A4A
+            color #fff
 
         h3
-            color: #9B9B9B
+            color: #E0E0E0
 
     &.dark
         background-color: #9B9B9B
@@ -357,18 +359,14 @@ x-reset()
             color: #D6D6D6
 
     &.align-left
-        .inner-box
-            left: 6%
-
-            > *
-                text-align: left
+        .content-wrap
+            left: 0
+            text-align: left
 
     &.align-right
-        .inner-box
-            right 6%
-
-            > *
-                text-align: right
+        .content-wrap
+            right 0
+            text-align: right
 
 /* Games */
 .games-show
@@ -395,9 +393,32 @@ x-reset()
             text-align: center
             padding 0 1em
 
-            img 
+            .inner-wrap 
+                position relative
                 width 100%
                 max-width: 275px
+
+                img
+                    width 100%
+                    transition: opacity .3s
+
+                .play-tip
+                    position absolute
+                    left 50%
+                    top 50%
+                    transform: translate(-50%, -50%)
+                    color: #fff
+                    font-size: 3rem
+                    cursor pointer
+                    transition: opacity .3s
+                    opacity 0
+
+                &:hover
+                    img
+                        opacity: .5
+
+                    .play-tip
+                        opacity 1
 
             h3
                 text-align: center
@@ -445,7 +466,7 @@ x-reset()
                     height 100%
                     left 0
                     top 0
-                    background-color: rgba(0,0,0,.5)
+                    background-color: rgba(0,0,0,.7)
                     opacity 0
                     transition: all .3s
 
@@ -469,13 +490,14 @@ x-reset()
                             color: #dddddd
                             font-size: 1.4rem
                             line-height 1.4em
-                            margin-top 1em
+                            margin-top .5em
                             padding 0 2em
 
                         .date
                             color: #ffffff
                             font-size: 1.4rem
-                            margin-top 20%
+                            margin-top 10%
+                            line-height 1.4em
 
             .art1
                 background-image: url(../images/art1.png)
@@ -504,6 +526,7 @@ x-reset()
         font-size: 3.4rem
         color #F5A623
         padding-top 2.4em
+        padding-bottom 1em
 
     .portrait
         margin 2em 0
@@ -517,7 +540,8 @@ x-reset()
         line-height 1.4em
 
     .contact-me
-        padding 2em
+        margin-top 300px
+        padding 2em 0
 
         a
             color #F5A623
@@ -527,22 +551,9 @@ x-reset()
 footer
     margin-top 60px
 
-    .follow-txt
-        font-size 16px
-        color #838487
-        text-align center
-
-    .follow-icons
-        margin-top 30px
-        text-align center
-        position relative
-        z-index 10
-        line-height 40px
-
     .copy-right
-        margin-top 50px
-        padding-top 2.4em
         height 80px
+        line-height 80px
         font-size 1.6rem
         text-align center
         line-height 1.4em

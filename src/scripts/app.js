@@ -59,7 +59,7 @@
     $('#play_intro_video').click(function(e){
         !yt_video_box.hasClass('show') && yt_video_box.addClass('show');
         yt_video_box.find('.video-wrap').html(`
-            <iframe src="https://www.youtube.com/embed/5ekUyxxpBt0?rel=0" frameborder="0" allowfullscreen>Loading...</iframe>
+            <iframe src="https://www.youtube.com/embed/4Q2EZ3mtRuA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
         `);
     })
 
@@ -74,7 +74,7 @@
             duration: 300
         })
     })
-    $('#nav_bar').on('click', 'li', function(e){
+    $('#nav_bar').on('click', '.scroll-item', function(e){
         var id = $(e.target).data('scroll-target');
         _win.scrollTo('#'+id, {
             duration: 300,
@@ -330,7 +330,7 @@
                 <img src="images/finalpiece/11.png" alt="Image">
                 <h1>FINAL DESIGN</h1>
                 <div class="video-wrap">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5ekUyxxpBt0?rel=0" frameborder="0" allowfullscreen>Loading...</iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/y0CyFXlAPnI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </div>
                 <img src="images/finalpiece/12.png" alt="Image">
                 <img src="images/finalpiece/13.png" alt="Image">

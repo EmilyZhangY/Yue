@@ -22,6 +22,10 @@ module.exports = ()=>{
         .pipe(gulp.dest('./build/styles/fonts'))
         .pipe(connect.reload());
 
+    gulp.src('./src/static/**/*')
+        .pipe(gulp.dest('./build'))
+        .pipe(connect.reload());
+
     gulp.src('./src/favicon.png')
         .pipe(gulp.dest('./build'))
         .pipe(connect.reload());

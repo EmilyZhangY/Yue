@@ -49,7 +49,7 @@
 
 <body>
     <!-- Intro Page -->
-    <aside class="intro-page">
+    <aside id="intro_page" class="intro-page">
         <div class="desc">
             <div class="txt-wrap">
                 <h1>Hi! I'm Yue.</h1>
@@ -76,56 +76,64 @@
     <!-- Header -->
     <div id="pin_wrapper" class="pin-wrapper">
         <header id="nav_bar" class="pinned">
-            <div class="home btn">Home</div>
+            <div data-scroll-target="intro_page" class="home btn scroll-item">Home</div>
             <ul>
-                <li data-scroll-target="projects_show">Projects</li>
-                <li data-scroll-target="games_show">Games</li>
-                <li data-scroll-target="art_works_show">Arts</li>
-                <li data-scroll-target="about_me">About me</li>
+                <li class="scroll-item" data-scroll-target="projects_show">Projects</li>
+                <li class="scroll-item" data-scroll-target="games_show">Games</li>
+                <li class="scroll-item" data-scroll-target="art_works_show">Arts</li>
+                <li class="scroll-item" data-scroll-target="about_me">About me</li>
             </ul>
         </header>
     </div>
 
     <!-- Projects -->
     <div id="projects_show" class="projects-show">
-        <section class="project no-1 align-left light" data-no="1">
+        <section class="project no-1 align-left light" data-no="4">
             <div class="bg-img"></div>
-            <div class="inner-box">
-                <h1>SLEEPING LAVENDER</h1>
-                <h3>a vr museum</h3>
-                <p>
-                    This is a project for people who want to get closer to famous artists. The project is a vr museum, and user can experience the artists' life story and interact with the elements in the scene.
-                </p>
+            <div class="content-wrap">
+                <div class="inner-box">
+                    <h1>The Final Piece</h1>
+                    <h3>JUL.16 - AUG.16 / GROUP</h3>
+                    <p>
+                        This is an art trip in VR for people to explore artists’ life story and get closer to famous paintings.
+                    </p>
+                </div>
             </div>
         </section>
-        <section class="project no-2 align-right dark" data-no="2">
+        <section class="project no-2 align-right light" data-no="3">
             <div class="bg-img"></div>
-            <div class="inner-box">
-                <h1>BIG NEWS ON EARTH</h1>
-                <h3>a vr museum</h3>
-                <p>
-                    This is a project for people who want to get closer to famous artists. The project is a vr museum, and user can experience the artists' life story and interact with the elements in the scene.
-                </p>
+            <div class="content-wrap">
+                <div class="inner-box">
+                    <h1>BABiES</h1>
+                    <h3>MAY.16 - JUN.16 / GROUP</h3>
+                    <p>
+                        This is an intellegent nursery system for parents to solve problems and be more comfortable in the nursing process.
+                    </p>
+                </div>
             </div>
         </section>
-        <section class="project no-3 align-left light" data-no="3">
+        <section class="project no-3 align-left light" data-no="2">
             <div class="bg-img"></div>
-            <div class="inner-box">
-                <h1>BABiES</h1>
-                <h3>a vr museum</h3>
-                <p>
-                    This is a project for people who want to get closer to famous artists. The project is a vr museum, and user can experience the artists' life story and interact with the elements in the scene.
-                </p>
+            <div class="content-wrap">
+                <div class="inner-box">
+                    <h1>Big News on Earth</h1>
+                    <h3>AUG.17 - OCT.17 / PERSONAL</h3>
+                    <p>
+                        The project allows children to learn science by playing with each other, using the AR techniques.
+                    </p>
+                </div>
             </div>
         </section>
-        <section class="project no-4 align-right dark" data-no="4">
+        <section class="project no-4 align-right light" data-no="1">
             <div class="bg-img"></div>
-            <div class="inner-box">
-                <h1>The Fianl Piece</h1>
-                <h3>a vr museum</h3>
-                <p>
-                    This is a project for people who want to get closer to famous artists. The project is a vr museum, and user can experience the artists' life story and interact with the elements in the scene.
-                </p>
+            <div class="content-wrap">
+                <div class="inner-box">
+                    <h1>Lavendern</h1>
+                    <h3>NOV.15 - JAN.16 / GROUP</h3>
+                    <p>
+                        Lavendern is a interactive night lamp to improve the quality of sleep by applying suitable sound, smell and temperature.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -144,16 +152,34 @@
 
         <div class="game-box">
             <div class="game no-1">
-                <img src="images/game_1.png" alt="Game1">
-                <h3>Game A</h3>
+                <div class="inner-wrap">
+                    <img src="images/game_1.png" alt="Game1">
+                    <div class="play-tip">
+                        PLAY!
+                    </div>
+                </div>
+                
+                <h3>Harmonic on the Ocean</h3>
             </div>
             <div class="game no-2">
-                <img src="images/game_2.png" alt="Game2">
-                <h3>Game B</h3>
+                <div class="inner-wrap">
+                    <img src="images/game_2.png" alt="Game2">
+                    <div class="play-tip">
+                        PLAY!
+                    </div>
+                </div>
+                
+                <h3>Fine, Daddy</h3>
             </div>
             <div class="game no-3">
-                <img src="images/game_3.png" alt="Game3">
-                <h3>Game C</h3>
+                <div class="inner-wrap">
+                    <img src="images/game_3.png" alt="Game3">
+                    <div class="play-tip">
+                        PLAY!
+                    </div>
+                </div>
+                
+                <h3>Single-Bed Dorm</h3>
             </div>
         </div>
     </div>
@@ -167,9 +193,9 @@
                 <div class="inner art1">
                     <div class="desc">
                         <div class="wrap">
-                            <p class="title">AZAPELLA</p>
-                            <p class="meta">album design for a schooh chorus</p>
-                            <p class="date">06/01/16-08/22/16</p>
+                            <p class="title">CERAMICS</p>
+                            <p class="meta">JUL. 2017</p>
+                            <p class="date">I love the surprise brought by shaping and glazing.</p>
                         </div>
                     </div>
                 </div>
@@ -178,9 +204,9 @@
                 <div class="inner art2">
                     <div class="desc">
                         <div class="wrap">
-                            <p class="title">AZAPELLA</p>
-                            <p class="meta">album design for a schooh chorus</p>
-                            <p class="date">06/01/16-08/22/16</p>
+                            <p class="title">WHAT I SEE</p>
+                            <p class="meta">MAR. 2017</p>
+                            <p class="date">What did I see?<br>What you see?</p>
                         </div>
                     </div>
                 </div>
@@ -190,8 +216,8 @@
                     <div class="desc">
                         <div class="wrap">
                             <p class="title">AZAPELLA</p>
-                            <p class="meta">album design for a schooh chorus</p>
-                            <p class="date">06/01/16-08/22/16</p>
+                            <p class="meta">JUL. 2016</p>
+                            <p class="date">I designed this music album for a student chorus in my school.</p>
                         </div>
                     </div>
                 </div>
@@ -200,9 +226,9 @@
                 <div class="inner art4">
                     <div class="desc">
                         <div class="wrap">
-                            <p class="title">AZAPELLA</p>
-                            <p class="meta">album design for a schooh chorus</p>
-                            <p class="date">06/01/16-08/22/16</p>
+                            <p class="title">ON-SALE</p>
+                            <p class="meta">MAY. 2015</p>
+                            <p class="date">How can hands play with dynamic fonts?</p>
                         </div>
                     </div>
                 </div>
@@ -211,9 +237,9 @@
                 <div class="inner art5">
                     <div class="desc">
                         <div class="wrap">
-                            <p class="title">AZAPELLA</p>
-                            <p class="meta">album design for a schooh chorus</p>
-                            <p class="date">06/01/16-08/22/16</p>
+                            <p class="title">PAPER CITIES</p>
+                            <p class="meta">DEC. 2016</p>
+                            <p class="date">Taibei and Beijing, we express our impression of these two cities.</p>
                         </div>
                     </div>
                 </div>
@@ -225,19 +251,18 @@
     <div id="about_me" class="about-me">
         <h1>MORE ABOUT ME</h1>
 
-        <!-- <div class="portrait">
+        <div class="portrait">
             <img src="" alt="">
-        </div> -->
+        </div>
 
-        <p>The one who dream and care about people's daily life and want to improve by making fun and cool stuff.the one who dream and care about people's daily life and want to improve by making fun and cool stuff.the one who dream and care about people's daily life and want to improve by making fun and cool stuff.</p>
-        <p>The one who dream and care about people's daily life and want to improve by making fun and cool stuff.the one who dream and care about people's daily life and want to improve by making fun and cool stuf cool stuf coolf.</p>
-        <p>The one who dream and care about people's daily life and want to improve by making fun and cool stuff.the one who dream and care about people's daily life and want to improve by making fun and cool stuff.The one who dream and care about people's daily life and want to improve by making fun and cool stuff.the one who dream and care about people's daily life and want to improve by making fun and cool stuff.</p>
+        <p>My parents supported me and held a positive opinion about my thoughts all the time. I’m really grateful that they always encouraged me to do things that I really liked. </p>
+        <p>And I’m so lucky to have friends that really cares.</p>
 
         <p class="contact-me">
             If you want to know more about me, you could 
             <a href="#">download my cv</a>
             or 
-            <a href="mailto:name@email.com">contact me by email</a>
+            <a href="mailto:13810186920@163.com">contact me by email</a>
             . Nice to have you. 
         </p>
     </div>
