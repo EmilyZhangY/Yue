@@ -53,8 +53,8 @@
         <div class="desc">
             <div class="txt-wrap">
                 <h1>Hi! I'm Yue.</h1>
-                <p>the one who dream and care about people's daily life and want to improve by making fun and cool stuff.</p>
-                <p>the one who dream and care about people's daily life.</p>
+                <p>A curious and passionate person, who want to improve our daily life by fun artworks and cool techniques.</p>
+                <p>Making people around me feel happy is always the strongest motive of my works.</p>
                 <img id="my_works" class="my-works btn" src="images/my_works.png" alt="My Works">
             </div>
         </div>
@@ -78,16 +78,16 @@
         <header id="nav_bar" class="pinned">
             <div data-scroll-target="intro_page" class="home btn scroll-item">Home</div>
             <ul>
-                <li class="scroll-item" data-scroll-target="projects_show">Projects</li>
-                <li class="scroll-item" data-scroll-target="games_show">Games</li>
-                <li class="scroll-item" data-scroll-target="art_works_show">Arts</li>
-                <li class="scroll-item" data-scroll-target="about_me">About me</li>
+                <li class="scroll-item hl-projects" data-scroll-target="projects_show">Projects</li>
+                <li class="scroll-item hl-games" data-scroll-target="games_show">Games</li>
+                <li class="scroll-item hl-arts" data-scroll-target="art_works_show">Arts</li>
+                <li class="scroll-item hl-about-me" data-scroll-target="about_me">About me</li>
             </ul>
         </header>
     </div>
 
     <!-- Projects -->
-    <div id="projects_show" class="projects-show">
+    <div id="projects_show" class="projects-show hl-base-area" data-hl-target="hl-projects">
         <section class="project no-1 align-left light" data-no="4">
             <div class="bg-img"></div>
             <div class="content-wrap">
@@ -139,7 +139,7 @@
     </div>
 
     <!-- Games -->
-    <div id="games_show" class="games-show">
+    <div id="games_show" class="games-show hl-base-area" data-hl-target="hl-games">
         <h1>PLAY MY GAMES</h1>
 
         <div class="game-box">
@@ -177,7 +177,7 @@
     </div>
 
     <!-- Art Works -->
-    <div id="art_works_show" class="art-works-show">
+    <div id="art_works_show" class="art-works-show hl-base-area" data-hl-target="hl-arts">
         <h1>SOME OF MY ATR WORKS</h1>
 
         <div class="art-box">
@@ -240,7 +240,7 @@
     </div>
 
     <!-- About Me -->
-    <div id="about_me" class="about-me">
+    <div id="about_me" class="about-me hl-base-area" data-hl-target="hl-about-me">
         <h1>MORE ABOUT ME</h1>
 
         <div class="portrait">

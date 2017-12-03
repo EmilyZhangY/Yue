@@ -516,6 +516,11 @@
         showSubPage(sub_page_html)
     })
 
+    /**
+     * Highlight navigation tab
+     */
+    
+
 
     /**************      Tool     **************/
     function getBCR(ele, type) {
