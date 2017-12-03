@@ -17,3 +17,5 @@ build/
 
 rev/
 package-lock.json
+
+CNAME
