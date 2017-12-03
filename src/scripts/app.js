@@ -2,7 +2,7 @@
  * @Author: Mr.B 
  * @Date: 2017-11-27 12:17:37 
  * @Last Modified by: Nokey
- * @Last Modified time: 2017-12-01 22:35:29
+ * @Last Modified time: 2017-12-03 23:14:27
  */
 'use strict'; 
 
@@ -519,7 +519,17 @@
     /**
      * Highlight navigation tab
      */
-    
+    function HighlightNav(opts){
+        this.in_offset = opts.in_offset;
+
+        this.out_offset = opts.out_offset;
+
+        this.base_areas = opts.base_areas;
+
+
+    }
+
+    // HighlightNav.prototype.
 
 
     /**************      Tool     **************/
