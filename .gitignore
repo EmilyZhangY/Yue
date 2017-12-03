@@ -16,3 +16,4 @@ build/
 .idea/
 
 rev/
+package-lock.json
