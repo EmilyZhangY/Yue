@@ -520,16 +520,56 @@
      * Highlight navigation tab
      */
     function HighlightNav(opts){
-        this.in_offset = opts.in_offset;
+        this.limit_line = _win_height / 2;
 
-        this.out_offset = opts.out_offset;
+        this.base_areas = $('.hl-base-area');
 
-        this.base_areas = opts.base_areas;
-
-
+        this.nearest_area = {
+            distance: 0,
+            class: null
+        };
     }
 
-    // HighlightNav.prototype.
+    HighlightNav.prototype.onScroll = function(){
+        var _me = this;
+
+        _me.base_areas.each((i, e)=>{
+            // console.log(_me.nearest_area)
+
+            var _top = getBCR(e, 'top'),
+                _target_nav_class = $(e).data('hl-target'),
+                _target_nav = $('.'+_target_nav_class);
+
+            if(_top > _me.limit_line){
+                // remove highlight from nav
+                _target_nav.hasClass('active') && _target_nav.removeClass('active');
+                if(_me.nearest_area.class == _target_nav_class){
+                    _me.nearest_area.class = null;
+                }
+            }else{
+                var _dis = Math.abs(_top - _me.limit_line);
+
+                if(_me.nearest_area.class === null){
+                    _me.nearest_area.class = _target_nav_class;
+                    _me.nearest_area.distance = _dis;
+                }else if(_me.nearest_area.class == _target_nav_class){
+                    _me.nearest_area.distance = _dis;
+                }else if(_dis < _me.nearest_area.distance){
+                    $('.'+_me.nearest_area.class).removeClass('active');
+                    _me.nearest_area.class = _target_nav_class;
+                    _me.nearest_area.distance = _dis;
+                }
+            }
+        })
+
+        $('.'+_me.nearest_area.class).addClass('active');
+    }
+
+    var highlight_nav = new HighlightNav();
+
+    _win.scroll(function(e){
+        highlight_nav.onScroll();
+    }).trigger('scroll')
 
 
     /**************      Tool     **************/

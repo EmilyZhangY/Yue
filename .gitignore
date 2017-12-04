@@ -15,7 +15,8 @@ build/
 # 忽略idea
 .idea/
 
+# Custom
 rev/
 package-lock.json
-
+*.bkp
 CNAME
