@@ -1,4 +1,4 @@
-# [Yue Personal Website](www.yue-zhang.me)
+# [Yue Personal Website](http://www.yue-zhang.me)
 
 ```javascript
 npm run dev  // develop project
