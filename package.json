@@ -35,7 +35,7 @@
   "scripts": {
     "dev": "gulp watch",
     "build": "gulp build",
-    "gh": "gulp build && rm -rf ./docs && cp -r build docs"
+    "gh": "gulp build && cp -r build docs"
   },
   "author": "yue",
   "license": "ISC"
