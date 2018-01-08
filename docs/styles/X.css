@@ -351,9 +351,10 @@ body {
 }
 .project {
   position: relative;
-  height: 300px;
+  padding-top: 27.5%;
   overflow: hidden;
   cursor: pointer;
+  width: 100%;
 }
 .project .content-wrap {
   position: absolute;
@@ -753,7 +754,7 @@ body {
 .sub-page-wrapper .content h1 {
   font-size: 3rem;
   font-weight: bold;
-  margin: 15px 0;
+  margin: 50px 0 25px;
   color: #4a4a4a;
 }
 .sub-page-wrapper .content h1.title {
@@ -764,7 +765,7 @@ body {
 .sub-page-wrapper .content h2 {
   font-size: 2.4rem;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 40px 0 20px;
   color: #4a4a4a;
 }
 .sub-page-wrapper .content h3 {
@@ -794,7 +795,7 @@ body {
 }
 .sub-page-wrapper .content img {
   display: block;
-  margin: 15px 0;
+  margin: 45px 0;
   width: 100%;
 }
 .sub-page-wrapper .content .video-wrap {
