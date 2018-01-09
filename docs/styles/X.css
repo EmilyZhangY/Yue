@@ -421,6 +421,9 @@ body {
 .project.no-4 .bg-img {
   background-image: url("../images/project_4.jpg");
 }
+.project.no-5 .bg-img {
+  background-image: url("../images/project_4.jpg");
+}
 .project.align-left:hover .content-wrap {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -813,6 +816,13 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+}
+.sub-page-wrapper .content .layout-1 {
+  width: 80%;
+  margin: 0 auto;
+}
+.sub-page-wrapper .content .layout-2 {
+  margin-top: 5px;
 }
 /* About Me */
 .about-me {

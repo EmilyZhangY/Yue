@@ -222,9 +222,12 @@
                 <p>Students' attention time is significantly longer for interactive app. In the process of playing app, the amount of knowledge is relatively large. Pure text and pictures of book forms, students receive information is low, and no interest. Classroom instruction, although it allows students to obtain basic information, but no initiative in learning.</p>
                 <h1>DESIGN OBJECTIVE</h1>
                 <p>This project focuses on the development of the earth, and products can provide visual and interesting knowledge experience for teenagers. You can also take it with you and share it with your friends.</p>
-                <img src="images/bignews/12.png" alt="Image">
+                <img class="layout-1" src="images/bignews/12.png" alt="Image">
                 <h1>SKETCHING</h1>
-                <img src="images/bignews/13.png" alt="Image">`.trim()
+                <img src="images/bignews/13.png" alt="Image">
+                <h1>FINAL DESIGN - PLAYABLE BOOK</h1>
+                <img src="images/bignews/14.png" alt="Image">
+                `.trim()
                 break;
 
             case 3:
@@ -354,17 +357,44 @@
 
             case 5:
                 sub_page_html = `
-                    <h1 class="title">PROJRECT 5</h1>
-                    <h6 class="desc">JULY 2016 -- AUGUST 2016 / PERSONAL PROJECT</h6>
+                    <h1 class="title">Wanderline</h1>
+                    <h6 class="desc">DEC. 2017 -- JAN. 2017 / PERSONAL PROJECT</h6>
                     <hr>
-                    <h1>TITLE 1</h1>
-                    <h2>Title 2</h2>
-                    <h3>Title 3</h3>
-                    <p>texte xttextt exte xttextte xtextte xttexte xttex ttexte xttextt extextte xttex text text</p>
-                    <img src="images/test-img.jpg" alt="Test Image">
-                    <div class="video-wrap">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5ekUyxxpBt0?rel=0" frameborder="0" allowfullscreen>Loading...</iframe>
-                    </div>
+                    <p>Nowadays, highly developed network has made it much easier to communicate with all parts of the world. But the circle of people is still very small. Knowing the other person's gender, age, and status, a lot of contacts are based on unilities. Even if you can connect to distant strangers on facebook or twitter, very few people will actually do this. Even if you do, you will worry about if the stranger will do harm to your real life. I hope to design an installation product that allows users to wander in true connections all over the world. Everyone is equal and feel free to have any true dialogue with a random person on earth.</p>
+                    <h1>HISTORY OF COMMUNICATION</h1>
+                    <h2>Line of Road</h2>
+                    <img src="images/line/1.png" alt="Image">
+                    <p>In ancient china, people domesticate pigeon to delivery messages. Later then, people use horses, carriages or ships to send mails. During that period, the line that connect us is road.</p>
+                    <h2>Line of Electricity</h2>
+                    <img src="images/line/2.png" alt="Image">
+                    <p>In the middle of 19 century, the Second Industrial Evolution bursted out. That was when telegram and telephone came to stage. During that period, the line to convey messages is electric circuit.</p>
+                    <h2>Line of Signal</h2>
+                    <img src="images/line/3.png" alt="Image">
+                    <p>In the middle of 19 century, the Second Industrial Evolution bursted out. That was when telegram and telephone came to stage. During that period, the line to convey messages is electric circuit.</p>
+                    <h1>INTERVIEWS</h1>
+                    <p>"What do you think is the most serious problems of the present communication with people?" Here's some possible answers.</p>
+                    <img src="images/line/14.png" alt="Image">
+                    <h1>PROBLEMS</h1>
+                    <img src="images/line/4.png" alt="Image">
+                    <h1>DESIGN PROPOSAL</h1>
+                    <img src="images/line/5.png" alt="Image">
+                    <h2>Objective</h2>
+                    <p>From one person’s small group and range chat to an world range communication.</p>
+                    <img class="layout-2" src="images/line/6.png" alt="Image">
+                    <h2>Inspiration</h2>
+                    <img class="layout-2" src="images/line/7.png" alt="Image">
+                    <h1>CONCEPT</h1>
+                    <img class="layout-2" src="images/line/8.png" alt="Image">
+                    <h2>Sketching</h2>
+                    <img class="layout-2" src="images/line/9.png" alt="Image">
+                    <h2>Functions</h2>
+                    <img class="layout-1" src="images/line/10.png" alt="Image">
+                    <h1>MODELING</h1>
+                    <img src="images/line/11.png" alt="Image">
+                    <h2>Gestures</h2>
+                    <img src="images/line/12.png" alt="Image">
+                    <h2>Storyboard</h2>
+                    <img src="images/line/13.png" alt="Image">
                 `.trim()
                 break;
         
@@ -505,6 +535,26 @@
                 <img src="images/arts/art5b.jpg" alt="Image">
                 <img src="images/arts/art5c.jpg" alt="Image">
                 <img src="images/arts/art5d.jpg" alt="Image">
+                `.trim()
+                break;
+
+            case 6:
+                sub_page_html = `
+                <h1 class="title">EASILY PAY</h1>
+                <h6 class="desc">NOV. 2015 -- DEC. 2015 / GROUP PROJECT</h6>
+                <hr>
+                <p>Easily Pay is an Apple Watch client app of third-party payment.</p>
+                <h1>OBJECTIVE</h1>
+                <p>Nowadays, mobile phones are developing rapidly. In the field of third-party payment on mobile phones, Alipay and WeChat Pay take the lead in China. However, Alipay on Apple Watch is only applicable to recieve notifications after the transfer, which makes the user experience relative poor. WeChat Pay even doesn’t provide payment feature on Apple Watch. Since mobile phones are not as convenient as watches in certain circumstances, Easily Pay makes it possible for users to pay through watches when they are jogging, or going for walks. We hope that people can unfettered by mobile phones in payment situations.</p>
+                <img src="images/arts/pay/1.png" alt="Image">
+                <h1>APP DIAGRAM</h1>
+                <img src="images/arts/pay/2.png" alt="Image">
+                <h1>PRODUCT FUNCTION</h1>
+                <img src="images/arts/pay/3.png" alt="Image">
+                <h1>UI DESIGN</h1>
+                <img src="images/arts/pay/4.png" alt="Image">
+                <h1>USAGE SCENARIO</h1>
+                <img src="images/arts/pay/5.png" alt="Image">
                 `.trim()
                 break;
         
