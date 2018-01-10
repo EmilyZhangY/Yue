@@ -265,8 +265,7 @@
                 <h1>SKETCH &amp; MODELING</h1>
                 <img src="images/babies/babies10.png" alt="Image">
                 <h1>UI DESIGN</h1>
-                <img src="images/babies/babies11.png" alt="Image">
-                <img src="images/babies/babies12.png" alt="Image">
+                <img src="images/babies/11.jpg" alt="Image">
                 <h1>STORYBOARD</h1>
                 <img src="images/babies/babies13.png" alt="Image">
                 <h1>RENDERING</h1>
@@ -358,7 +357,7 @@
             case 5:
                 sub_page_html = `
                     <h1 class="title">Wanderline</h1>
-                    <h6 class="desc">DEC. 2017 -- JAN. 2017 / PERSONAL PROJECT</h6>
+                    <h6 class="desc">DEC.2016 -- JAN.2017 / PERSONAL PROJECT</h6>
                     <hr>
                     <p>Nowadays, highly developed network has made it much easier to communicate with all parts of the world. But the circle of people is still very small. Knowing the other person's gender, age, and status, a lot of contacts are based on unilities. Even if you can connect to distant strangers on facebook or twitter, very few people will actually do this. Even if you do, you will worry about if the stranger will do harm to your real life. I hope to design an installation product that allows users to wander in true connections all over the world. Everyone is equal and feel free to have any true dialogue with a random person on earth.</p>
                     <h1>HISTORY OF COMMUNICATION</h1>
@@ -421,14 +420,9 @@
                 <h6 class="desc">DEC. 2016 -- JAN. 2017 / PERSONAL PROJECT</h6>
                 <hr>
                 <p>This is my final project of the European and American Children Picture Books class in the exchanging semester in Taiwan. The picture book is about a real whale sings at 52 Hz and doesn’t have herd in many years. I want to rearrange this story to convey a positive attitude towards life to children. That is ‘no matter how unique you are, you are not alone and you are gonna find your own happiness.’ And in this book, I used the visual language that provided in the book Picture This.</p>
-                <img src="images/games/gamea1.jpg" alt="Image">
-                <img src="images/games/gamea2.jpg" alt="Image">
-                <img src="images/games/gamea3.jpg" alt="Image">
-                <img src="images/games/gamea4.jpg" alt="Image">
-                <img src="images/games/gamea5.jpg" alt="Image">
-                <img src="images/games/gamea6.jpg" alt="Image">
-                <img src="images/games/gamea7.jpg" alt="Image">
-                <img src="images/games/gamea8.jpg" alt="Image">
+                <img src="images/games/g-a1.jpg" alt="Image">
+                <img src="images/games/g-a2.jpg" alt="Image">
+                <img src="images/games/g-a3.jpg" alt="Image">
                 `.trim()
                 break;
 
@@ -488,6 +482,7 @@
                 <h1 class="title">CERAMICS</h1>
                 <h6 class="desc">JUL. 2017</h6>
                 <hr>
+                <p>Last summer, I went to UCLA to have summer session classes. And Ceramics was something that I always wanted to try. On that course, I learned the crafts of centering, trimming, glazing…… And I also immersed in the unpredictable surprises created by different clay, kiln temperature, oxygen content and types of glaze. Here’s some work of mine. Each is for one of my friends, so I add some elements and personalities in the pieces.</p>
                 <img src="images/arts/art1a.jpg" alt="Image">
                 <img src="images/arts/art1b.jpg" alt="Image">
                 <img src="images/arts/art1c.jpg" alt="Image">
@@ -499,6 +494,7 @@
                 <h1 class="title">WHAT I SEE</h1>
                 <h6 class="desc">MAR. 2017</h6>
                 <hr>
+                <p>What I see in the nature and unconscious line?</p>
                 <img src="images/arts/art2a.jpg" alt="Image">
                 <img src="images/arts/art2b.jpg" alt="Image">
                 <img src="images/arts/art2c.jpg" alt="Image">
@@ -521,6 +517,7 @@
                 <h1 class="title">ON-SALE</h1>
                 <h6 class="desc">MAY. 2015</h6>
                 <hr>
+                <p>This is the album I designed for the Acabella choir in our school. A clock similar to Roman numerals on the cover is actually 12 clef, meaning Bach's twelve average law, which also symbolizes the twelve young people who are pursuing perfection. The money from the sale of the album was used to purchase electronic piano for children in rural areas in Beijing.</p>
                 <img src="images/arts/art4a.gif" alt="Image">
                 <img src="images/arts/art4b.gif" alt="Image">
                 `.trim()
@@ -531,6 +528,7 @@
                 <h1 class="title">PAPER CITIES</h1>
                 <h6 class="desc">DEC. 2016</h6>
                 <hr>
+                <p>Before we left Taibei, my friend and I wanted to express our impression on Taibei and our hometown — Beijing. So we choose some golden and silver pen and some large contract color paper to make pop-up cards, which can express our emotions.</p>
                 <img src="images/arts/art5a.jpg" alt="Image">
                 <img src="images/arts/art5b.jpg" alt="Image">
                 <img src="images/arts/art5c.jpg" alt="Image">
