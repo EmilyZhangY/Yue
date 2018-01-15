@@ -175,7 +175,7 @@
                 <p>Cover the roots of lavender——Trigger photoresistors——Diode lights turn on——Print the resistance value——Pass the motor signal——volatile essential oil——music box sound</p>
                 <img src="images/lavender/lavender10.png" alt="Image">
                 <div class="video-wrap">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Jwse92m0LeI?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4NTiVJQYq70" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 <h1>FINAL DESIGN</h1>
                 <h2>Modeling</h2>
@@ -189,15 +189,15 @@
                 `<h1 class="title">BIG NEWS ON EARTH</h1>
                 <h6 class="desc">AUG. 2017 -- OCT. 2017 / PERSONAL PROJECT</h6>
                 <hr>
-                <p>Most children are curious and want to explore the limitations of the past and the future of the world. There's a problem. Only through Museum documentaries, pictures, drawings, earth science knowledge, children are difficult to understand. Fragmentation of knowledge allows children to accept the information disorder.</p>
+                <p>Most children are curious and want to explore the past and the future of the world. There's a problem. Only through Museum documentaries, pictures, drawings, earth science knowledge, children are difficult to understand. Fragmentation of knowledge allows children to accept the information disorder.</p>
                 <h1>BACKGROUND</h1>
                 <h2>World Science Education Development Map</h2>
                 <img src="images/bignews/1.png" alt="Image">
                 <p>In 2016, some experiments were conducted to collect relevant data about children's science education in china. The results show that the main purpose of science education for children in China is to cultivate scientific inquiry ability and satisfy children's curiosity. The main ways of education are explanation, demonstration and practice by children themselves.</p>
                 <img src="images/bignews/2.png" alt="Image">
-                <p>In 2011, Professor Kou Yuxia conducted an experiment on science enlightenment education in six kindergartens directly under the Heilongjiang province of china. The results show that preschool teachers have a lower mastery of scientific knowledge. At the same time, teachers have a correct understanding of the purpose of science education in kindergartens.</p>
+                <p>In 2011, Professor Kou Yuxia conducted an experiment on science enlightenment education in six kindergartens in the Heilongjiang province of China. The results show that preschool teachers have a lower mastery of scientific knowledge. At the same time, teachers have a correct understanding of the purpose of science education in kindergartens.</p>
                 <img src="images/bignews/3.png" alt="Image">
-                <p>However, preschool teachers are deficient in the methods of imparting scientific knowledge. Only some preschool teachers can design different teaching methods and different game content to instill knowledge. Most preschool teachers are relatively single in their teaching methods. For example, from the material situation, the material form is small, and some of the materials are unsafe and difficult to operate, such as: glass, iron nails, iron filings, etc.</p>
+                <p>However, preschool teachers are deficient in the methods of imparting scientific knowledge. Only some preschool teachers can design different teaching methods and game contents to instill knowledge. Most preschool teachers are using single teaching methods. For example, as the material teachers use in science educations, form is poor, and some of the materials are unsafe and difficult to operate, such as glass, iron nails, iron filings, etc.</p>
                 <h1>RELATED PRODUCTS</h1>
                 <img src="images/bignews/4.png" alt="Image">
                 <h2>Existing Science Education Products and Ways</h2>
@@ -206,13 +206,13 @@
                 <h3>Method</h3>
                 <p>Each group had 30 minutes to play mobile phone app, read science books, or listen to teacher’s lecture to get science knowledge. After 30 minutes, they all need to answer a quick test, so that we can know the extent to which they acquire knowledge through different methods.</p>
                 <h3>Population</h3>
-                <p>There were 30 fourth grade students at Beijing Zhongguancun No.1 Primary School participated this experiment. Students’ ages are from 9 to 11. 30 students were divided into 3 groups, and each group include 10 students.</p>
+                <p>There were 30 fourth grade students at Beijing Zhongguancun No.1 Primary School participated in this experiment. Students’ ages are from 9 to 11. They were divided into 3 groups, and each group included 10 students.</p>
                 <img src="images/bignews/6.png" alt="Image">
-                <p>From the three educational methods designed ten topics, considering the experimental students aged 9-11 years old, do not want to cause too much burden on the answer, so students only choose right and wrong.</p>
+                <p>Depending on the contents of three educational methods, we designed ten questions. Considering the students aged 9-11 years old, we don’t want to cause too much burden on them, so students only need to choose right or wrong.</p>
                 <img src="images/bignews/7.png" alt="Image">
                 <h2>Result</h2>
                 <img src="images/bignews/8.png" alt="Image">
-                <p>In group A, 1 students stopped using app in eighteenth minutes. All 6 students stopped using -25 for 20 minutes. Only 3 students play app all the time. 10 students scored an average of 8.1 points.</p>
+                <p>In group A, one student stopped using app in the eighteenth minute. 6 students stopped playing their app from 20 to 25 minutes. Only 3 students play app all the time. 10 students scored an average of 8.1 points.</p>
                 <img src="images/bignews/9.png" alt="Image">
                 <p>In group B, 3 students did not read books in 10 minutes. 2 students stopped reading in 10-15 minutes. The remaining 5 students stopped reading in 15-20 minutes. 10 students scored an average of 5.8 points.</p>
                 <img src="images/bignews/10.png" alt="Image">
@@ -231,7 +231,7 @@
                 break;
 
             case 3:
-            sub_page_html = `
+                sub_page_html = `
                 <h1 class="title">BABiES</h1>
                 <h6 class="desc">MAY. 2016 -- JUN. 2016 / GROUP PROJECT</h6>
                 <hr>
@@ -280,7 +280,7 @@
 
             case 4:
                 sub_page_html = `
-                <h1 class="title">The Fianl Piece</h1>
+                <h1 class="title">THE FINAL PIECE</h1>
                 <h6 class="desc">JUL. 2016 -- AUG. 2016 / GROUP PROJECT</h6>
                 <hr>
                 <p>This is a project for people who want to get closer to famous artists. The project is a vr museum, and user can experience the artists’ life story and interact with the elements in the scene. Through experiencing the last pieces of artists’ work, we hope that people can immerse and enjoy more. </p>
@@ -356,7 +356,7 @@
 
             case 5:
                 sub_page_html = `
-                    <h1 class="title">Wanderline</h1>
+                    <h1 class="title">WANDERLINE</h1>
                     <h6 class="desc">DEC.2016 -- JAN.2017 / PERSONAL PROJECT</h6>
                     <hr>
                     <p>Nowadays, highly developed network has made it much easier to communicate with all parts of the world. But the circle of people is still very small. Knowing the other person's gender, age, and status, a lot of contacts are based on unilities. Even if you can connect to distant strangers on facebook or twitter, very few people will actually do this. Even if you do, you will worry about if the stranger will do harm to your real life. I hope to design an installation product that allows users to wander in true connections all over the world. Everyone is equal and feel free to have any true dialogue with a random person on earth.</p>
@@ -506,6 +506,7 @@
                 <h1 class="title">AZAPELLA</h1>
                 <h6 class="desc">JUL. 2016</h6>
                 <hr>
+                <p>This is the album I designed for the Acapella choir in our school. A clock similar to Roman numerals on the cover is actually 12 clefs, meaning Bach's twelve average law, which also symbolizes the twelve young people who are pursuing perfection. The money from the sale of the album was used to purchase electronic pianos for children in rural areas in Beijing.</p>
                 <img src="images/arts/art3a.jpg" alt="Image">
                 <img src="images/arts/art3b.jpg" alt="Image">
                 <img src="images/arts/art3c.jpg" alt="Image">
